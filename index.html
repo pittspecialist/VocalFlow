@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VocalFlow — Professional AI Voiceover Studio</title>
+  <meta name="description" content="Generate, manage, and perfect AI voiceovers 10x faster than the ElevenLabs web interface. Deterministic seed control, one-click restore, and isolated history." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50: '#fffbeb', 100: '#fef3c7', 200: '#fde68a', 300: '#fcd34d', 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' },
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text { background: linear-gradient(135deg, #fbbf24, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .glow { box-shadow: 0 0 60px rgba(251, 191, 36, 0.15); }
+  </style>
+</head>
+<body class="bg-stone-950 text-stone-100 antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-stone-950/80 backdrop-blur-xl border-b border-stone-800/50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-400 to-indigo-500 flex items-center justify-center text-white font-black text-sm">V</div>
+        <span class="font-extrabold tracking-tight text-lg">VocalFlow</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#features" class="text-sm text-stone-400 hover:text-white transition-colors hidden sm:block">Features</a>
+        <a href="#pricing" class="text-sm text-stone-400 hover:text-white transition-colors hidden sm:block">Pricing</a>
+        <a href="#faq" class="text-sm text-stone-400 hover:text-white transition-colors hidden sm:block">FAQ</a>
+        <a href="https://getvocalflow.lemonsqueezy.com/checkout/buy/ff12f2c0-7e51-4310-8074-d0aa9f2322ff" class="bg-amber-500 hover:bg-amber-400 text-stone-900 font-bold text-sm px-5 py-2 rounded-full transition-all">Buy Now — $29</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-stone-800/60 border border-stone-700/50 rounded-full px-4 py-1.5 mb-8">
+        <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+        <span class="text-xs text-stone-400 font-medium">Powered by ElevenLabs AI</span>
+      </div>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] mb-6">
+        The Professional<br /><span class="gradient-text">ElevenLabs Desktop Studio</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-stone-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Generate, manage, and perfect AI voiceovers <strong class="text-stone-200">10x faster</strong> than the web interface. Deterministic seeds, one-click restore, and local file storage.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://getvocalflow.lemonsqueezy.com/checkout/buy/ff12f2c0-7e51-4310-8074-d0aa9f2322ff" class="bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-stone-900 font-bold text-base px-8 py-3.5 rounded-full transition-all shadow-lg shadow-amber-500/25">
+          Buy Now — $29 One-Time
+        </a>
+        <a href="#features" class="border border-stone-700 hover:border-stone-500 text-stone-300 hover:text-white font-semibold text-base px-8 py-3.5 rounded-full transition-all">
+          See Features ↓
+        </a>
+      </div>
+      <p class="text-xs text-stone-600 mt-4">One-time purchase. No subscription. Windows desktop app.</p>
+    </div>
+  </section>
+
+  <!-- Problem/Solution -->
+  <section class="py-16 px-6 border-t border-stone-800/50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">ElevenLabs is powerful. <span class="text-stone-500">Its web UI isn't.</span></h2>
+      <div class="grid sm:grid-cols-3 gap-6 mt-10">
+        <div class="bg-stone-900/50 border border-stone-800 rounded-2xl p-6 text-left">
+          <div class="text-3xl mb-3">🎲</div>
+          <h3 class="font-bold text-stone-200 mb-2">Lost that perfect take?</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">The web UI regenerates with random seeds. You can never get that exact delivery back. VocalFlow gives you <strong class="text-stone-300">deterministic seed control</strong>.</p>
+        </div>
+        <div class="bg-stone-900/50 border border-stone-800 rounded-2xl p-6 text-left">
+          <div class="text-3xl mb-3">📂</div>
+          <h3 class="font-bold text-stone-200 mb-2">Downloads everywhere?</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">Audio files scattered across your Downloads folder with cryptic names. VocalFlow stores everything in an <strong class="text-stone-300">organized local library</strong>.</p>
+        </div>
+        <div class="bg-stone-900/50 border border-stone-800 rounded-2xl p-6 text-left">
+          <div class="text-3xl mb-3">⏱️</div>
+          <h3 class="font-bold text-stone-200 mb-2">Slow workflow?</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">Switching tabs, re-entering settings, downloading manually. VocalFlow is a <strong class="text-stone-300">single-window powerhouse</strong> with keyboard shortcuts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 px-6 border-t border-stone-800/50">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-3">Super Features</h2>
+        <p class="text-stone-500">Everything the web UI should have been.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-stone-900/40 border border-stone-800/60 rounded-xl p-5 hover:border-amber-500/30 transition-colors">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mb-3"><span class="text-amber-400 text-lg">🎯</span></div>
+          <h3 class="font-bold text-stone-200 text-sm mb-1">Deterministic Seed Control</h3>
+          <p class="text-xs text-stone-500 leading-relaxed">Lock any seed to reproduce the exact same delivery. A/B test with precision.</p>
+        </div>
+        <div class="bg-stone-900/40 border border-stone-800/60 rounded-xl p-5 hover:border-amber-500/30 transition-colors">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mb-3"><span class="text-amber-400 text-lg">♻️</span></div>
+          <h3 class="font-bold text-stone-200 text-sm mb-1">One-Click Restore</h3>
+          <p class="text-xs text-stone-500 leading-relaxed">Click any history item to reload its exact settings — voice, seed, stability, everything.</p>
+        </div>
+        <div class="bg-stone-900/40 border border-stone-800/60 rounded-xl p-5 hover:border-amber-500/30 transition-colors">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mb-3"><span class="text-amber-400 text-lg">🎧</span></div>
+          <h3 class="font-bold text-stone-200 text-sm mb-1">Isolated History Playback</h3>
+          <p class="text-xs text-stone-500 leading-relaxed">Play any previous generation instantly without disrupting your current session.</p>
+        </div>
+        <div class="bg-stone-900/40 border border-stone-800/60 rounded-xl p-5 hover:border-amber-500/30 transition-colors">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mb-3"><span class="text-amber-400 text-lg">💾</span></div>
+          <h3 class="font-bold text-stone-200 text-sm mb-1">Local File Storage</h3>
+          <p class="text-xs text-stone-500 leading-relaxed">All audio files stored locally in organized folders. No cloud dependency.</p>
+        </div>
+        <div class="bg-stone-900/40 border border-stone-800/60 rounded-xl p-5 hover:border-amber-500/30 transition-colors">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mb-3"><span class="text-amber-400 text-lg">🏷️</span></div>
+          <h3 class="font-bold text-stone-200 text-sm mb-1">Tag Cheat Sheet</h3>
+          <p class="text-xs text-stone-500 leading-relaxed">Built-in reference for expressive audio tags. Click to insert directly into your script.</p>
+        </div>
+        <div class="bg-stone-900/40 border border-stone-800/60 rounded-xl p-5 hover:border-amber-500/30 transition-colors">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mb-3"><span class="text-amber-400 text-lg">🎙️</span></div>
+          <h3 class="font-bold text-stone-200 text-sm mb-1">Voice Cloning</h3>
+          <p class="text-xs text-stone-500 leading-relaxed">Clone voices directly in the app. Upload samples and generate with your custom voice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 px-6 border-t border-stone-800/50">
+    <div class="max-w-md mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-3">Simple Pricing</h2>
+      <p class="text-stone-500 mb-10">One price. Lifetime access. No subscriptions.</p>
+      <div class="bg-stone-900/60 border border-amber-500/30 rounded-2xl p-8 glow">
+        <div class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">VocalFlow License</div>
+        <div class="flex items-baseline justify-center gap-1 mb-1">
+          <span class="text-5xl font-black">$29</span>
+        </div>
+        <p class="text-sm text-stone-500 mb-6">One-time payment</p>
+        <ul class="text-left space-y-3 mb-8 text-sm">
+          <li class="flex items-center gap-3 text-stone-300"><span class="text-emerald-400">✓</span> Full desktop app — Windows</li>
+          <li class="flex items-center gap-3 text-stone-300"><span class="text-emerald-400">✓</span> All 10 premium voices + voice cloning</li>
+          <li class="flex items-center gap-3 text-stone-300"><span class="text-emerald-400">✓</span> Deterministic seed control</li>
+          <li class="flex items-center gap-3 text-stone-300"><span class="text-emerald-400">✓</span> One-click restore & isolated history</li>
+          <li class="flex items-center gap-3 text-stone-300"><span class="text-emerald-400">✓</span> Tag cheat sheet & keyboard shortcuts</li>
+          <li class="flex items-center gap-3 text-stone-300"><span class="text-emerald-400">✓</span> Character usage dashboard</li>
+          <li class="flex items-center gap-3 text-stone-300"><span class="text-emerald-400">✓</span> Lifetime updates</li>
+        </ul>
+        <a href="https://getvocalflow.lemonsqueezy.com/checkout/buy/ff12f2c0-7e51-4310-8074-d0aa9f2322ff" class="block w-full bg-amber-500 hover:bg-amber-400 text-stone-900 font-bold text-base py-3.5 rounded-full transition-all text-center">
+          Buy Now — $29
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 px-6 border-t border-stone-800/50">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        <div class="border-b border-stone-800 pb-6">
+          <h3 class="font-bold text-stone-200 mb-2">Do I need an ElevenLabs account?</h3>
+          <p class="text-sm text-stone-500">Yes. VocalFlow is a professional frontend for ElevenLabs. You need your own ElevenLabs API key (free tier works).</p>
+        </div>
+        <div class="border-b border-stone-800 pb-6">
+          <h3 class="font-bold text-stone-200 mb-2">Is this a subscription?</h3>
+          <p class="text-sm text-stone-500">No. VocalFlow is a one-time purchase of $29. You get lifetime access and updates.</p>
+        </div>
+        <div class="border-b border-stone-800 pb-6">
+          <h3 class="font-bold text-stone-200 mb-2">What platforms are supported?</h3>
+          <p class="text-sm text-stone-500">Windows (64-bit) currently. macOS support is planned.</p>
+        </div>
+        <div class="border-b border-stone-800 pb-6">
+          <h3 class="font-bold text-stone-200 mb-2">Do you store my API key?</h3>
+          <p class="text-sm text-stone-500">No. Your API key is encrypted and stored locally on your machine. It never leaves your computer.</p>
+        </div>
+        <div class="border-b border-stone-800 pb-6">
+          <h3 class="font-bold text-stone-200 mb-2">Can I use it on multiple devices?</h3>
+          <p class="text-sm text-stone-500">Each license is for one device. You can deactivate and move it to another device anytime from Settings.</p>
+        </div>
+        <div class="pb-6">
+          <h3 class="font-bold text-stone-200 mb-2">What if I have issues?</h3>
+          <p class="text-sm text-stone-500">Email us at <a href="mailto:support@getvocalflow.com" class="text-amber-400 hover:underline">support@getvocalflow.com</a> and we'll help you out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-stone-800/50 py-10 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded bg-gradient-to-br from-amber-400 to-indigo-500 flex items-center justify-center text-white font-black text-[10px]">V</div>
+        <span class="text-sm font-bold">VocalFlow</span>
+        <span class="text-xs text-stone-600">© 2026</span>
+      </div>
+      <div class="flex items-center gap-6 text-xs text-stone-500">
+        <a href="mailto:support@getvocalflow.com" class="hover:text-stone-300 transition-colors">Support</a>
+        <a href="https://getvocalflow.lemonsqueezy.com" class="hover:text-stone-300 transition-colors">Store</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
